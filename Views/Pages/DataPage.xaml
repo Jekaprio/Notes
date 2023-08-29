@@ -19,12 +19,9 @@
     mc:Ignorable="d">
 
     <Grid>
-        <ui:VirtualizingItemsControl
-            Foreground="{DynamicResource TextFillColorSecondaryBrush}"
-            ItemsSource="{Binding ViewModel.Colors, Mode=OneWay}"
-            VirtualizingPanel.CacheLengthUnit="Item">
-        </ui:VirtualizingItemsControl>
-
-     
+        <StackPanel>
+            <RichTextBox Width="Auto" Height="Auto" HorizontalAlignment="Left" FontSize="25" Foreground="IndianRed"/>
+        </StackPanel>
+        
     </Grid>
 </Page>
