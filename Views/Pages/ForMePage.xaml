@@ -20,7 +20,7 @@
 
     <Grid>
         <StackPanel>
-            <RichTextBox Width="Auto" Height="Auto" HorizontalAlignment="Left" FontSize="25" Foreground="IndianRed"/>
+            <RichTextBox Width="Auto" Height="Auto" SpellCheck.IsEnabled="True" HorizontalAlignment="Left" FontSize="25" Foreground="IndianRed" FontWeight="Bold"/>
         </StackPanel>
     </Grid>
 </Page>

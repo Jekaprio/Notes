@@ -1,5 +1,9 @@
 ﻿using Notes.ViewModels.Pages;
+using System.Windows.Documents;
+using System.Windows.Input;
 using Wpf.Ui.Controls;
+using System.Windows;
+
 namespace Notes.Views.Pages
 {
     public partial class DashboardPage : INavigableView<DashboardViewModel>
@@ -14,7 +18,17 @@ namespace Notes.Views.Pages
             InitializeComponent();
         }
 
-       
 
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            /*System.Windows.MessageBoxButton button = System.Windows.MessageBoxButton.OK;
+            System.Windows.MessageBox.Show("This is a message.", "Message", button);*/
+
+        }
+
+       
     }
 }
+
+
