@@ -3,9 +3,10 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:local="clr-namespace:Notes.Views.Pages"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"  xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
     Title="DashboardPage"
     d:DataContext="{d:DesignInstance local:DashboardPage,
                                      IsDesignTimeCreatable=False}"
@@ -14,13 +15,13 @@
     ui:Design.Background="{DynamicResource ApplicationBackgroundBrush}" 
     ui:Design.Foreground="{DynamicResource TextFillColorPrimaryBrush}"
     Foreground="{DynamicResource TextFillColorPrimaryBrush}"
-    mc:Ignorable="d"
-    >
+    mc:Ignorable="d">
+
 
     <Grid>
         <StackPanel>
-            <ui:RichTextBox  Width="Auto" SpellCheck.IsEnabled="True" Height="Auto"  FontSize="25" Foreground="IndianRed" FontWeight="Bold"/>
-            
+            <ui:RichTextBox x:Name="docBox" Width="Auto" PreviewKeyDown="docBox_PreviewKeyDown"  SpellCheck.IsEnabled="True" Height="Auto"  FontSize="25" Foreground="IndianRed" FontWeight="Bold"/>
+            <xctk:ColorPicker x:Name="colorPicker" Background="Black" Foreground="Black" HeaderForeground="Black" TabForeground="Black" SelectedColorChanged="colorPicker_SelectedColorChanged"></xctk:ColorPicker>
             <ui:Button 
                 Content="Insert photo" 
                 Width="105" Height="35" 
@@ -29,7 +30,8 @@
                 Margin="0,25,300,-36" 
                 FontWeight="Bold"
                 PressedBackground="IndianRed"
-                PressedForeground="Black"/>
+                PressedForeground="Black"
+                Click="Insert_Click"/>
             <ui:Button 
                 Content="Clean" 
                 Appearance="Dark" 
@@ -40,6 +42,7 @@
                 FontWeight="Bold"
                 PressedBackground="IndianRed"
                 PressedForeground="Black"
+                Click="Clean_Click"
                 />
             <ui:Button 
                 Content="Load Notes" 
@@ -50,16 +53,23 @@
                 Margin="0,0,0,-36" 
                 FontWeight="Bold"
                 PressedBackground="IndianRed"
-                PressedForeground="Black"/>
+                PressedForeground="Black"
+                Click="Load_Click"/>
             <ui:Button 
-                Content="Save" 
+                Content="Save Notes" 
                 Appearance="Dark" 
                 Width="100" Height="35" 
                 HorizontalAlignment="Right" 
                 Margin="0,0,450,0" 
                 FontWeight="Bold" 
                 PressedBackground="IndianRed"
-                PressedForeground="Black"/>
+                PressedForeground="Black"
+                Click="Save_Click"/>
+
+            <ui:Button
+                Content="Edit Text"
+                Click="Button_Click"
+                />
         </StackPanel>
     </Grid>
 </Page>

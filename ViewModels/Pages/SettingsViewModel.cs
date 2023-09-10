@@ -1,4 +1,6 @@
-﻿using Wpf.Ui.Controls;
+﻿using System.Windows;
+using Wpf.Ui.Controls;
+using Xceed.Wpf.Toolkit;
 
 namespace Notes.ViewModels.Pages
 {
@@ -54,9 +56,11 @@ namespace Notes.ViewModels.Pages
 
                     Wpf.Ui.Appearance.Theme.Apply(Wpf.Ui.Appearance.ThemeType.Dark);
                     CurrentTheme = Wpf.Ui.Appearance.ThemeType.Dark;
-
+                   
                     break;
             }
         }
+        
     }
+
 }
