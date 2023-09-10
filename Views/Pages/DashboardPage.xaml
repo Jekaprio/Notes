@@ -16,6 +16,7 @@
     ui:Design.Foreground="{DynamicResource TextFillColorPrimaryBrush}"
     Foreground="{DynamicResource TextFillColorPrimaryBrush}"
     mc:Ignorable="d">
+    
 
 
     <Grid>
@@ -70,6 +71,7 @@
                 Content="Edit Text"
                 Click="Button_Click"
                 />
+            
         </StackPanel>
     </Grid>
 </Page>
