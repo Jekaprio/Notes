@@ -1,5 +1,4 @@
 ﻿
-
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -11,6 +10,7 @@ using Notes.Views.Windows;
 using System.IO;
 using System.Reflection;
 using System.Windows.Threading;
+
 
 namespace Notes
 {
@@ -57,6 +57,7 @@ namespace Notes
         private void OnStartup(object sender, StartupEventArgs e)
         {
             _host.Start();
+            
         }
 
        

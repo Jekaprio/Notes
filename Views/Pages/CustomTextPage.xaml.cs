@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Notes.Views.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,9 +19,16 @@ namespace Notes.Views.Pages
     
     public partial class CustomText : Window
     {
+      
         public CustomText()
         {
             InitializeComponent();
         }
+       
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
+

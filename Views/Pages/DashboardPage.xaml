@@ -10,19 +10,34 @@
     Title="DashboardPage"
     d:DataContext="{d:DesignInstance local:DashboardPage,
                                      IsDesignTimeCreatable=False}"
-    d:DesignHeight="450" 
-    d:DesignWidth="800"
+    d:DesignHeight="1920" 
+    d:DesignWidth="1080"
+    
     ui:Design.Background="{DynamicResource ApplicationBackgroundBrush}" 
     ui:Design.Foreground="{DynamicResource TextFillColorPrimaryBrush}"
     Foreground="{DynamicResource TextFillColorPrimaryBrush}"
     mc:Ignorable="d">
-    
-
 
     <Grid>
         <StackPanel>
-            <ui:RichTextBox x:Name="docBox" Width="Auto" PreviewKeyDown="docBox_PreviewKeyDown"  SpellCheck.IsEnabled="True" Height="Auto"  FontSize="25" Foreground="IndianRed" FontWeight="Bold"/>
-            <xctk:ColorPicker x:Name="colorPicker" Background="Black" Foreground="Black" HeaderForeground="Black" TabForeground="Black" SelectedColorChanged="colorPicker_SelectedColorChanged"></xctk:ColorPicker>
+            <ui:RichTextBox 
+                x:Name="docBox" 
+                Width="Auto" 
+                PreviewKeyDown="docBox_PreviewKeyDown"  
+                SpellCheck.IsEnabled="True" Height="Auto" 
+                Foreground="IndianRed"
+                FontWeight="Bold"
+                FontSize="{Binding ElementName=fontSizeSlider, Path=Value}"/>
+            <xctk:ColorPicker 
+                x:Name="colorPicker" 
+                BorderBrush="Transparent"  
+                Background="Transparent" 
+                HeaderForeground="Black" 
+                TabForeground="Black" 
+                Width="300"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Right"
+                SelectedColorChanged="colorPicker_SelectedColorChanged"/>
             <ui:Button 
                 Content="Insert photo" 
                 Width="105" Height="35" 
@@ -67,11 +82,28 @@
                 PressedForeground="Black"
                 Click="Save_Click"/>
 
-            <ui:Button
-                Content="Edit Text"
-                Click="Button_Click"
+            <Slider 
+                Name="fontSizeSlider"
+                Width="100"
+                Minimum="10"
+                Maximum="100"
+                Value="35"
+                TickFrequency="10"
+                IsSnapToTickEnabled="True"
+                TickPlacement="Both"
+                Margin="-250,-35,22,0"
+                ToolTip="Text Size"
                 />
-            
+            <ComboBox
+                Name="fontComboBox"
+                Width="300"
+                Height="250"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Margin="0,-35,0,0"
+                ToolTip="Text Style"
+                SelectionChanged="fontComboBox_SelectionChanged"
+                />
         </StackPanel>
     </Grid>
 </Page>

@@ -40,11 +40,12 @@ namespace Notes.Services
 
         private void OnNavigationWindowLoaded(object sender, RoutedEventArgs e)
         {
+            
+
             if (sender is not MainWindow navigationWindow)
             {
                 return;
             }
-
             navigationWindow.NavigationView.Navigate(typeof(DashboardPage));
         }
     }

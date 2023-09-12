@@ -4,18 +4,39 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net7.0-windows</TargetFramework>
     <ApplicationManifest>app.manifest</ApplicationManifest>
-    <ApplicationIcon>clipboard-edit-black-interface-symbol_icon-icons.com_54569.ico</ApplicationIcon>
+    <ApplicationIcon>note_list_icon_124054.ico</ApplicationIcon>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="clipboard-edit-black-interface-symbol_icon-icons.com_54569.ico" />
+    <Compile Remove="Assets\**" />
+    <EmbeddedResource Remove="Assets\**" />
+    <None Remove="Assets\**" />
+    <Page Remove="Assets\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="ViewModels\Pages\CustomTextViewModel.cs" />
+    <Compile Remove="Views\Pages\CustomTextPage.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="dismiss_button.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Views\Pages\CustomTextPage.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="note_list_icon_124054.ico" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Extended.Wpf.Toolkit" Version="4.5.1" />
+    <PackageReference Include="MahApps.Metro" Version="2.4.10" />
     <PackageReference Include="MaterialDesignColors" Version="2.1.4" />
     <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
     <PackageReference Include="MaterialDesignThemes.MahApps" Version="0.3.0" />
