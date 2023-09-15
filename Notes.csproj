@@ -18,6 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\DataColor.cs" />
+    <Compile Remove="Resources\Translations.cs" />
     <Compile Remove="ViewModels\Pages\CustomTextViewModel.cs" />
     <Compile Remove="Views\Pages\CustomTextPage.xaml.cs" />
   </ItemGroup>
@@ -43,6 +45,10 @@
     <PackageReference Include="WPF-UI" Version="3.0.0-preview.4" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1 " />
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1 " />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
 
 </Project>

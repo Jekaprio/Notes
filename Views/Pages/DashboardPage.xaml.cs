@@ -12,6 +12,7 @@ using Wpf.Ui.Controls;
 using Xceed.Wpf.Toolkit;
 
 
+
 namespace Notes.Views.Pages
 {
     public partial class DashboardPage : INavigableView<DashboardViewModel>
@@ -205,6 +206,7 @@ namespace Notes.Views.Pages
         }
     }
 }
+
 
 
 

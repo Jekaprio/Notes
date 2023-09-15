@@ -1,4 +1,4 @@
-﻿using System.Windows.Media;
+﻿/*using System.Windows.Media;
 
 namespace Notes.Models
 {
@@ -7,3 +7,4 @@ namespace Notes.Models
         public Brush Color { get; set; }
     }
 }
+*/

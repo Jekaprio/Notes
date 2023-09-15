@@ -1,6 +1,6 @@
-namespace Notes.Resources
+/*namespace Notes.Resources
 {
     public partial class Translations
     {
     }
-}
+}*/

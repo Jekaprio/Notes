@@ -4,9 +4,11 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+   
     xmlns:local="clr-namespace:Notes.Views.Pages"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"  xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"  
+    xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
     Title="DashboardPage"
     d:DataContext="{d:DesignInstance local:DashboardPage,
                                      IsDesignTimeCreatable=False}"
@@ -47,7 +49,8 @@
                 FontWeight="Bold"
                 PressedBackground="IndianRed"
                 PressedForeground="Black"
-                Click="Insert_Click"/>
+                Click="Insert_Click"
+                />
             <ui:Button 
                 Content="Clean" 
                 Appearance="Dark" 
@@ -104,6 +107,7 @@
                 ToolTip="Text Style"
                 SelectionChanged="fontComboBox_SelectionChanged"
                 />
+            
         </StackPanel>
     </Grid>
 </Page>
