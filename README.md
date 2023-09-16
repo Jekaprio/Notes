@@ -17,11 +17,11 @@ To use the **Notes App**, simply download and install it on your device (https:/
 
 ## Usage
 
-1. Launch the **Notes App**.
-2. Create a new note by clicking the "New Note" button.
-3. Enter a title and content for your note.
-4. Save the note by clicking the "Save" button.
-5. Organize or search for notes using the app's features.
+1. Launch the **Notes**.
+2. Select the category in which you want to create a note
+3. Print the note
+4. Save the note by clicking the "Save Notes" button.
+5. Search for notes using the app's features.
 
 ## Contributing
 
