@@ -35,12 +35,10 @@ We welcome contributions from the community! If you'd like to contribute to the 
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License LICENSE.
 
-## Support
 
-If you encounter any issues or have questions, please [create an issue](https://github.com/yourusername/notes-app/issues) in the GitHub repository.
 
 ---
 
-Feel free to customize this README to suit your specific application and requirements. Make sure to replace placeholders like `link/to/your/logo.png` with the actual paths or URLs to your application's logo and assets.
+
