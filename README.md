@@ -13,7 +13,7 @@ The **Notes App** is a simple and intuitive note-taking application that allows 
 
 ## Installation
 
-To use the **Notes App**, simply download and install it on your device from [the official website](https://www.example.com/notes-app).
+To use the **Notes App**, simply download and install it on your device (https://github.com/Jekaprio/Notes/releases/download/Notes/Notes_setup.exe).
 
 ## Usage
 
