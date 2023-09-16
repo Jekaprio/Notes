@@ -204,8 +204,11 @@ namespace Notes.Views.Pages
                 selectedText.ApplyPropertyValue(TextElement.FontFamilyProperty, font);
             }
         }
+
+       
+        }
     }
-}
+
 
 
 
