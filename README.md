@@ -1,6 +1,6 @@
 # Notes
 
-![Notes App Logo](https://ibb.co/fxNmTL3)
+![Notes App Logo](https://i.ibb.co/fxNmTL3/note-list-icon-124054-1.png)
 
 The **Notes App** is a simple and intuitive note-taking application that allows users to quickly jot down, organize, and manage their notes.
 
