@@ -25,7 +25,7 @@ To use the **Notes App**, simply download and install it on your device from [th
 
 ## Contributing
 
-We welcome contributions from the community! If you'd like to contribute to the **Notes App**, please follow these steps:
+We welcome contributions from the community! If you'd like to contribute to the **Notes**, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature: `git checkout -b feature-your-feature`.
